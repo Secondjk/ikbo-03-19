@@ -22,4 +22,12 @@ public class Human {
     public Head getHead() {
         return head;
     }
+
+    @Override
+    public String toString() {
+        return "Head radius: " + this.getHead().getRadius() +
+                "\nHand length: " + this.getHand().getLength() +
+                "\nLeg length: " + this.getLeg().getLength()
+        ;
+    }
 }
